@@ -27,6 +27,7 @@ services:
       - SITE_HOMEPAGE=https://perlite.secure77.de/
       - SITE_GITHUB=https://github.com/
     volumes:
+      - ./perlite/Demo:/var/www/perlite/Demo:ro
       - obsidian_sharedvault:/var/www/perlite/obsidian:ro
 
   web:
