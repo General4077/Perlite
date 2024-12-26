@@ -4,7 +4,7 @@ services:
     container_name: perlite
     restart: unless-stopped
     environment:
-      - NOTES_PATH=Demo
+      - NOTES_PATH=obsidian
       - HIDE_FOLDERS=docs,private,trash
       - LINE_BREAKS=true
       - ABSOLUTE_PATHS=false
@@ -27,7 +27,7 @@ services:
       - SITE_HOMEPAGE=https://perlite.secure77.de/
       - SITE_GITHUB=https://github.com/
     volumes:
-      - ./perlite/Demo:/var/www/perlite/Demo:ro
+      - obsidian_sharedvault:/var/www/perlite/obsidian:ro
 
   web:
     image: nginx:stable
