@@ -42,3 +42,6 @@ services:
     depends_on:
       - perlite
 
+volumes:
+  obsidian_sharedvault:
+     external: true
