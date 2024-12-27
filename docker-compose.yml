@@ -6,7 +6,7 @@ services:
     container_name: perlite
     restart: unless-stopped
     environment:
-      - NOTES_PATH=obsidian
+      - NOTES_PATH=shared_vault
       - HIDE_FOLDERS=docs,private,trash
       - LINE_BREAKS=true
       - ABSOLUTE_PATHS=false
