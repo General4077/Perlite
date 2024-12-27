@@ -2,7 +2,7 @@ services:
   perlite:
     # image: sec77/perlite:latest
     build:
-      context: ./web
+      context: ./perlite
     container_name: perlite
     restart: unless-stopped
     environment:
