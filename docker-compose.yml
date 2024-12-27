@@ -30,7 +30,7 @@ services:
       - SITE_GITHUB=https://github.com/
     volumes:
       - ./perlite/Demo:/var/www/perlite/Demo:ro
-      - obsidian_sharedvault:/var/www/perlite/obsidian:ro
+      - obsidian_sharedvault:/var/www/perlite/shared_vault:ro
 
   web:
     image: nginx:latest
