@@ -31,7 +31,7 @@ services:
       - obsidian_sharedvault:/var/www/perlite/obsidian:ro
 
   web:
-    image: nginx:stable
+    image: nginx:latest
     container_name: perlite_web
     restart: unless-stopped
     ports:
